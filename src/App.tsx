@@ -1,5 +1,3 @@
-import { Layout } from './components/Layout';
-import styled from 'styled-components';
 import { 
   Box,
   Button,
@@ -8,14 +6,19 @@ import {
   Input
  } from '@chakra-ui/react'
 import { login } from './services/login';
+import { Header } from './components/Header/Header';
 
 
 function App() {
   return (
    <ChakraProvider>
-    <Box minHeight={'100vh'} backgroundColor= '#9413dc' padding = '25px'>
+        
+    <Box minHeight={'100vh'} backgroundColor= '#9413dc'>
+      <Header />
       <Box backgroundColor = '#ffffff' borderRadius = '25px' padding ='15'>
-        <Center>Faça Login</Center>
+        <Center>
+          Faça Login
+        </Center>
         <Input placeholder = "Email"/>
         <Input placeholder = "Password"/>
         <Button onClick={login} colorScheme='teal' size='md'>
