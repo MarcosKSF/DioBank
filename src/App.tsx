@@ -7,6 +7,7 @@ import {
   ChakraProvider,
   Input
  } from '@chakra-ui/react'
+import { login } from './services/login';
 
 
 function App() {
@@ -17,8 +18,8 @@ function App() {
         <Center>Faça Login</Center>
         <Input placeholder = "Email"/>
         <Input placeholder = "Password"/>
-        <Button colorScheme='teal' size='md'>
-            Button
+        <Button onClick={login} colorScheme='teal' size='md'>
+            Entrar
         </Button>
       </Box>
     </Box>
