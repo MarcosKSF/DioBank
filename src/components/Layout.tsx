@@ -1,12 +1,16 @@
-import { Footer } from "./Footer"
-import { Header } from "./Header/Header"
+interface Icard {
+    id: number,
+    paragraph: string,
+    details: string
+}
 
-export const Layout =({ children }: any ) =>{
+export const layout = ({id, paragraph, details}: Icard) => {
+    console.log(id);
     return(
-        <>
-            <Header />
-            {children}
-            <Footer />
-        </>
+        <div>
+        <h1>Card {id}</h1>
+        <p>{paragraph}</p>
+        <p>{details}</p>
+      </div>
     )
 }

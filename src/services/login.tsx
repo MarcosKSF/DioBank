@@ -1,3 +1,3 @@
 export const login = (): void =>{
-    alert('Bem Vindo ao sistema')
+    alert('Seja Bem Vindo ao sistema, Kaleu!')
 }
