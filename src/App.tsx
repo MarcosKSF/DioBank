@@ -2,14 +2,14 @@ import {
   ChakraProvider,
  } from '@chakra-ui/react'
 import { Header } from './components/Header/Header';
-import { Func_Login } from './components/Func_Login';
+import { Login } from './components/Pages/Login';
 import { Footer } from "./components/Footer"
 
 
 function App() {
   return (
    <ChakraProvider>
-     <Func_Login />
+     <Login />
       <Footer />
    </ChakraProvider>
   );

@@ -1,12 +1,11 @@
 import { Box, Center, Input,Text } from "@chakra-ui/react"
-import { Header } from "./Header/Header"
-import { Buttaon } from "./Buttaon"
-import { login } from "../services/login"
+import { Header } from "../Header/Header"
+import { Button } from "../Button"
+import { login } from "../../services/login"
 
   
-    let login_f = login
 
-export const Func_Login =() =>{
+export const Login =() =>{
     return(
     <Box minH={'100vh'} backgroundColor= '#9413dc'>
       <Header />
@@ -16,8 +15,10 @@ export const Func_Login =() =>{
         </Center>
         <Input placeholder = "Email"/>
         <Input placeholder = "Password"/>
-        <Buttaon llogin={login_f} />
+        <Button login={login} />
       </Box>
     </Box>
     )
 }
+
+export default Login
